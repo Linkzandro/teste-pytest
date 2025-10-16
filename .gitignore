@@ -1,0 +1,10 @@
+# Pytest cache directory
+.pytest_cache/
+
+# Pytest report files (if generated)
+*.xml
+*.html
+
+venv/
+
+*.pyc
