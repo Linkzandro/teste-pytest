@@ -38,7 +38,7 @@ Regra de Início (primeiro caractere deve ser uma letra):
 -   Primeira posição é um símbolo ou espaço → inválido.
   
 
-## 2.2 Casos de Teste
+# 3. Casos de Teste
 | Caso | Entrada | Descrição | Resultado Esperado |
 | :--- | :--- | :--- | :--- |
 | 1 | "a" | Mínimo válido (1 caractere, começa com letra) | Válido |
