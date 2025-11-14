@@ -39,16 +39,17 @@ Regra de Início (primeiro caractere deve ser uma letra):
   
 
 # 3. Casos de Teste
-| Caso | Entrada | Descrição | Resultado Esperado |
-| :--- | :--- | :--- | :--- |
-| 1 | "a" | Mínimo válido (1 caractere, começa com letra) | Válido |
-| 2 | "abcdef" | Máximo válido (6 letras) | Válido |
-| 3 | "abcdefg" | Ultrapassa limite de tamanho | Inválido |
-| 4 | "1abc" | Começa com número | Inválido |
-| 5 |"a1b2" | Letras e números válidos | Válido |
-| 6 | "a!b" | Contém símbolo inválido | Inválido |
-| 7 | "" | Comprimento zero | Inválido |
-| 8 | "Z9xK2" | Formato válido com mistura de casos | Válido |
+| Caso | Entrada | Descrição | Classe | Resultado Esperado |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | "s12345" | contempla um valor válido | V1 | Válido |
+| 2 | "1w2345" | começa com número | I1 | Inválido |
+| 3 | " w2345" | começa com espaço | I1 | Inválido |
+| 4 | "_w2345" | começa com caracter especial | I1/I4 | Inválido |
+| 5 |"жw2345" | começa com carácter estrangeiro | I1/I5 | Válido |
+| 6 | " " | string vazia | I2 | Inválido |
+| 7 | "w1w23451" | mais que 6 caracteres | I3 | Inválido |
+| 8 | "wб4ж4" | contém carácter estrangeiro | I5 | Válido |
+| 9 | "wA_b+B" | contém carácter especial | I4 | Válido |
 
 # 4. Como testar em sua maquina local
 O Identifier usa a biblioteca pytest para rodar os testes, foi usado um ambiente virtual nesse processo
