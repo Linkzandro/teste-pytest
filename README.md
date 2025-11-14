@@ -93,25 +93,25 @@ Essa prática de integração permite testes automatizados de pontos centrais do
 ## 5.1 Imagens do funcionamento do CI/CD
 ### 5.1.1
 primeiro é necessário criar um ambiente virtual no github para executrar os testes, o github automaticamente cria um trabalho que irá criar essa máquina de testes
-![Criação de trabalhos](1.PNG)
+![Criação de trabalhos](imagens_integracao_continua/1.PNG)
 
 ### 5.1.2
 O passo de checkout "baixa" o código do repositorio nessa maquina
-![Checkout](2.PNG)
+![Checkout](imagens_integracao_continua/2.PNG)
 
 ### 5.1.3
 O passso de "Configurar python" configura na máquina qual a versão do python usar 
-![Configurando python](3.PNG)
+![Configurando python](imagens_integracao_continua/3.PNG)
 
 ### 5.1.4
 O passso de "Instalar dependencias" instala as dependencias do projeto
-![baixando dependencias 2](4_1.PNG)
-![baixando dependencias 2](4_2.PNG)
+![baixando dependencias 2](imagens_integracao_continua/4_1.PNG)
+![baixando dependencias 2](imagens_integracao_continua/4_2.PNG)
 
 ### 5.1.5
 O passso de "Executar testes" executa os testes nos scripts teste_*.py que criamos, nesse caso test_identifier.py
-![Executar testes](5.PNG)
+![Executar testes](imagens_integracao_continua/5.PNG)
 
 ### 5.1.6
 Por último, o github executa, por conta propria, a limpeza da maquina de testes e finalização dos processos
-![Executar testes](6.PNG)
+![Executar testes](imagens_integracao_continua/6.PNG)
